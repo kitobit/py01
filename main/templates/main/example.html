@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+{% if sum %}
+    <p>{{sum}}</p>
+{% endif %}
+
+{% if factorial %}
+    <p>Первые 10 наиболее частых слов с сайта</p>
+    {% for el in factorial %}
+    <p> {{ el }} </p>
+    {% endfor %}
+
+{% endif %}
+
+{% endblock %}
+{% block title %}Примеры{% endblock %}

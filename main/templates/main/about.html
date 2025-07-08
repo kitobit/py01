@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+    <p>{{sum}}</p>
+
+    <p>{{obj.age}}</p>
+
+    {% for el in obj %}
+    <p> {{ el }} </p>
+    {% endfor %}
+
+<a href="{% url 'sum' %}">Арифметические операции</a>
+
+<H1>Про нас</H1>
+<P>Про нас блок</P>
+{% endblock %}
+{% block title %}Про нас{% endblock %}
